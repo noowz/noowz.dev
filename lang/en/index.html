@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Noowz | Portfolio</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="noowz, portfolio, dev">
+		<meta name="description" content="Personal professional portfolio.">
+		<meta name="author" content="Noowz">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="google" content="notranslate">
+		<meta http-equiv="Content-Language" content="en_US">
+		<meta property="og:title" content="Noowz | Portfolio">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://noowz.vercel.app">
+		<meta property="og:image" content="https://i.imgur.com/euQMIFx.png">
+		<meta property="og:description" content="Personal professional portfolio.">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:locale:alternate" content="pt_PT">
+		<meta property="og:locale:alternate" content="pt_BR">
+		<meta property="og:locale:alternate" content="fr_FR">
+		<meta property="og:site_name" content="Noowz | Portfolio">
+		<link rel="icon" href="../../img/favicon.png">
+		<link rel="stylesheet" href="../../css/style.css">
+		<link rel="manifest" href="../../manifest.json">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+		<script async defer src="https://google.com/recaptcha/api.js?hl=en"></script>
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	</head>
+
+	<body>
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav__logo">
+					Carlos <span>Daniel</span>
+				</a>
+
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active-link"><i class="ri-home-4-line nav__icon"></i> Home</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#about" class="nav__link"><i class="ri-user-line nav__icon"></i> About</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#services" class="nav__link"><i class="ri-terminal-box-line nav__icon"></i> Services</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#projects" class="nav__link"><i class="ri-folder-3-line nav__icon"></i> Projects</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="#contact" class="nav__link"><i class="ri-send-plane-line nav__icon"></i> Contact</a>
+						</li>
+
+						<li class="nav__item">
+							<a href="../en" class="nav__link" id="navLanguageIcon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="0" aria-label="flag of us" viewBox="0 0 512 512">
+									<mask id="a">
+										<circle cx="256" cy="256" r="256" fill="#fff"></circle>
+									</mask>
+								
+									<g mask="url(#a)">
+										<path fill="#eee" d="M256 0h256v64l-32 32 32 32v64l-32 32 32 32v64l-32 32 32 32v64l-256 32L0 448v-64l32-32-32-32v-64z"></path>
+										
+										<path fill="#d80027" d="M224 64h288v64H224Zm0 128h288v64H256ZM0 320h512v64H0Zm0 128h512v64H0Z"></path>
+										
+										<path fill="#0052b4" d="M0 0h256v256H0Z"></path>
+										
+										<path fill="#eee" d="m187 243 57-41h-70l57 41-22-67zm-81 0 57-41H93l57 41-22-67zm-81 0 57-41H12l57 41-22-67zm162-81 57-41h-70l57 41-22-67zm-81 0 57-41H93l57 41-22-67zm-81 0 57-41H12l57 41-22-67Zm162-82 57-41h-70l57 41-22-67Zm-81 0 57-41H93l57 41-22-67zm-81 0 57-41H12l57 41-22-67Z"></path>
+									</g>
+								</svg>
+							</a>
+
+							<a href="../pt" class="nav__link" id="navLanguageIcon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="0" aria-label="flag of br" viewBox="0 0 512 512">
+									<mask id="a">
+										<circle cx="256" cy="256" r="256" fill="#fff"></circle>
+									</mask>
+									
+									<g mask="url(#a)">
+										<path fill="#6da544" d="M0 0h512v512H0z"></path>
+										
+										<path fill="#ffda44" d="M256 100.2 467.5 256 256 411.8 44.5 256z"></path>
+										
+										<path fill="#eee" d="M174.2 221a87 87 0 0 0-7.2 36.3l162 49.8a88.5 88.5 0 0 0 14.4-34c-40.6-65.3-119.7-80.3-169.1-52z"></path>
+										
+										<path fill="#0052b4" d="M255.7 167a89 89 0 0 0-41.9 10.6 89 89 0 0 0-39.6 43.4 181.7 181.7 0 0 1 169.1 52.2 89 89 0 0 0-9-59.4 89 89 0 0 0-78.6-46.8zM212 250.5a149 149 0 0 0-45 6.8 89 89 0 0 0 10.5 40.9 89 89 0 0 0 120.6 36.2 89 89 0 0 0 30.7-27.3A151 151 0 0 0 212 250.5z"></path>
+									</g>
+								</svg>
+							</a>
+
+							<a href="../fr" class="nav__link" id="navLanguageIcon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="0" aria-label="flag of fr" viewBox="0 0 512 512">
+									<mask id="a">
+										<circle cx="256" cy="256" r="256" fill="#fff"></circle>
+									</mask>
+									
+									<g mask="url(#a)">
+										<path fill="#eee" d="M167 0h178l25.9 252.3L345 512H167l-29.8-253.4z"></path>
+										
+										<path fill="#0052b4" d="M0 0h167v512H0z"></path>
+										
+										<path fill="#d80027" d="M345 0h167v512H345z"></path>
+									</g>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+					<div class="nav__close" id="nav-close">
+						<i class="ri-close-line"></i>
+					</div>
+				</div>
+
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="ri-menu-line"></i>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main">
+			<section class="home section" id="home">
+				<div class="home__container container grid">
+					<div class="home__content">
+						<div class="home__data">
+							<h3 class="home__subtitle"><span class="wave" role="img" aria-labelledby="wave">👋🏻</span>Hey, <span>I'm</span></h3>
+
+							<h1 class="home__title">Carlos Daniel</h1>
+
+							<h3 class="home__education"><span class="typewritter__home"></span></h3>
+
+							<p class="home__description">
+								With knowledge in web development, I offer the best projects resulting in high quality work.
+							</p>
+
+							<a href="#contact" class="button">
+								<i class="ri-send-plane-fill"></i> Contact Me
+							</a>
+						</div>
+
+						<div class="home__social">
+							<a href="https://linkedin.com/in/cdanieeel" target="_blank" class="home__social-link">
+								<i class="ri-linkedin-fill"></i>
+							</a>
+
+							<a href="https://github.com/noowz" target="_blank" class="home__social-link">
+								<i class="ri-github-fill"></i>
+							</a>
+
+							<a href="https://twitter.com/noowzvlr" target="_blank" class="home__social-link">
+								<i class="ri-twitter-fill"></i>
+							</a>
+
+							<a href="https://discord.com/users/163656084714815491" target="_blank" class="home__social-link">
+								<i class="ri-discord-fill"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="home__image">
+						<svg class="home__blob" viewBox="0 0 550 591" xmlns="http://w3.org/2000/svg">
+							<g mask="url(#maskBlob)">
+								<rect x="37" width="476" height="630" fill="url(#pattern0)" />
+							</g>
+
+							<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+									<use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+								</pattern>
+
+								<image class="home__img" id="imageBlob" width="640" height="865" href="../../img/profile.svg" />
+							</defs>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="about section" id="about">
+				<div class="about__container container grid">
+					<div class="about__data">
+						<h3 class="section__subtitle">My <span>Introduction</span></h3>
+
+						<h2 class="section__title">About Me</h2>
+
+						<p class="about__description">
+							Hey, I am <b>Daniel</b>, also known as <b>Noowz</b>. I am 19 years old and I am Web Developer. I am Portuguese but I am currently living in France. In my free time I like coding, playing video games and watching videos on YouTube or series on Netflix.
+						</p>
+
+						<a href="#contact" class="button">
+							<i class="ri-send-plane-fill"></i> Contact Me
+						</a>
+					</div>
+
+					<div class="about__image">
+						<svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://w3.org/2000/svg">
+							<mask id="maskBorder" mask-type="alpha">
+								<path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black" />
+							</mask>
+
+							<g mask="url(#maskBorder)">
+								<rect x="37" width="476" height="630" fill="url(#pattern2)" />
+
+								<path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10" />
+							</g>
+
+							<rect x="37" width="476" height="300" fill="url(#pattern3)" />
+
+							<defs>
+								<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+									<use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+								</pattern>
+
+								<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+									<use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+								</pattern>
+
+								<image class="about__img" id="imageBorder" width="640" height="940" href="../../img/profile.svg" />
+							</defs>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="skills section">
+				<div class="skills__container container grid">
+					<div class="skills__data">
+						<h3 class="section__subtitle">My <span>Skills</span></h3>
+
+						<h2 class="section__title">Technologies</h2>
+
+						<p class="skills__description">
+							See which technologies I master and I use daily for my projects.
+						</p>
+
+						<a href="#projects" class="button">
+							<i class="ri-folder-3-fill"></i> See Projects
+						</a>
+					</div>
+
+					<div class="skills__content">
+						<ol class="skills__group">
+							<li class="skills__item">HTML</li>
+							<li class="skills__item">CSS</li>
+							<li class="skills__item">JavaScript</li>
+							<li class="skills__item">PHP</li>
+							<li class="skills__item">C#</li>
+						</ol>
+
+						<ol class="skills__group" start="6">
+							<li class="skills__item">Python</li>
+							<li class="skills__item">SQL</li>
+							<li class="skills__item">MongoDB</li>
+							<li class="skills__item">Node.js</li>
+							<li class="skills__item">Git</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section class="services section" id="services">
+				<h3 class="section__subtitle">My <span>Services</h3>
+
+				<h2 class="section__title">What I do</h2>
+
+				<div class="services__container container grid">
+					<article class="services__card">
+						<i class="ri-robot-line services__icon"></i>
+
+						<h2 class="services__title">Discord Bots</h2>
+
+						<p class="services__description">
+							Development of high quality custom Discord bots.
+						</p>
+					</article>
+
+					<article class="services__card">
+						<i class="ri-profile-line services__icon"></i>
+
+						<h2 class="services__title">Discord RPC</h2>
+
+						<p class="services__description">
+							Development of high quality custom Discord Rich Presences.
+						</p>
+					</article>
+
+					<article class="services__card">
+						<i class="ri-server-line services__icon"></i>
+
+						<h2 class="services__title">Discord Servers</h2>
+
+						<p class="services__description">
+							Creation and configuration of high quality Discord servers with custom bots.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="projects section" id="projects">
+				<h3 class="section__subtitle">My <span>Works</span></h3>
+
+				<h2 class="section__title">Recent Projects</h2>
+
+				<div class="projects__container container grid">
+					<article class="projects__card">
+						<img src="../../img/devlinks.png" alt="Project image" class="projects__img">
+
+						<div class="projects__modal">
+							<span class="projects__subtitle">Website</span>
+
+							<h2 class="projects__title">DevLinks</h2>
+
+							<a href="https://noowz-devlinks.pages.dev/" target="_blank" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+
+							<a href="https://github.com/noowz/rocketseat-devlinks" target="_blank" class="projects__button">Source Code <i class="ri-external-link-line"></i></a>
+						</div>
+					</article>
+
+					<article class="projects__card">
+						<img src="../../img/gtbthemesolver.png" alt="Project image" class="projects__img">
+
+						<div class="projects__modal">
+							<span class="projects__subtitle">Website</span>
+
+							<h2 class="projects__title">GTBThemeSolver</h2>
+
+							<a href="https://noowz.github.io/GTBThemeSolver" target="_blank" class="projects__button">View Demo <i class="ri-external-link-line"></i></a>
+
+							<a href="https://github.com/noowz/GTBThemeSolver" target="_blank" class="projects__button">Source Code <i class="ri-external-link-line"></i></a>
+						</div>
+					</article>
+
+					<article class="projects__card">
+						<img src="../../img/brawlwrapperjs.png" alt="Project image" class="projects__img">
+
+						<div class="projects__modal">
+							<span class="projects__subtitle">NPM Package</span>
+
+							<h2 class="projects__title">brawlwrapper.js</h2>
+
+							<a href="https://npmjs.com/package/brawlwrapper.js" target="_blank" class="projects__button">Download <i class="ri-external-link-line"></i></a>
+
+							<a href="https://github.com/noowz/brawlwrapper.js" target="_blank" class="projects__button">Source Code <i class="ri-external-link-line"></i></a>
+						</div>
+					</article>
+
+					<article class="projects__card">
+						<img src="../../img/bsrpc.png" alt="Project image" class="projects__img">
+
+						<div class="projects__modal">
+							<span class="projects__subtitle">Discord RPC</span>
+
+							<h2 class="projects__title">BSRPC</h2>
+
+							<a href="https://github.com/noowz/BSRPC" target="_blank" class="projects__button">Download <i class="ri-external-link-line"></i></a>
+
+							<a href="https://github.com/noowz/BSRPC" target="_blank" class="projects__button">Source Code <i class="ri-external-link-line"></i></a>
+						</div>
+					</article>
+
+					<article class="projects__card">
+						<img src="../../img/crrpc.png" alt="Project image" class="projects__img">
+
+						<div class="projects__modal">
+							<span class="projects__subtitle">Discord RPC</span>
+
+							<h2 class="projects__title">CRRPC</h2>
+
+							<a href="https://github.com/noowz/CRRPC" target="_blank" class="projects__button">Download <i class="ri-external-link-line"></i></a>
+
+							<a href="https://github.com/noowz/CRRPC" target="_blank" class="projects__button">Source Code <i class="ri-external-link-line"></i></a>
+						</div>
+					</article>
+
+					<article class="projects__card">
+						<img src="../../img/cocrpc.png" alt="Project image" class="projects__img">
+
+						<div class="projects__modal">
+							<span class="projects__subtitle">Discord RPC</span>
+
+							<h2 class="projects__title">COCRPC</h2>
+
+							<a href="https://github.com/noowz/COCRPC" target="_blank" class="projects__button">Download <i class="ri-external-link-line"></i></a>
+
+							<a href="https://github.com/noowz/COCRPC" target="_blank" class="projects__button">Source Code <i class="ri-external-link-line"></i></a>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="contact section" id="contact">
+				<h3 class="section__subtitle">My <span>Contact</span></h3>
+
+				<h2 class="section__title">Contact Me</h2>
+
+				<div class="contact__container container grid">
+					<form action="" autocomplete="off" class="contact__form" id="contact-form">
+						<div class="contact__group">
+							<input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+							<input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+						</div>
+
+						<textarea name="user_message" required placeholder="Enter your message" class="contact__input"></textarea>
+
+						<div class="g-recaptcha" data-sitekey="6LdoipwlAAAAABCCp4Q7djATR5Tqw-CnOclJktLT" data-theme="dark"></div>
+
+						<p class="contact__message" id="contact-message"></p>
+
+						<button type="submit" class="button contact__button">
+							<i class="ri-send-plane-fill"></i> Send Message
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container grid">
+				<div>
+					<h1 class="footer__title">Carlos <span>Daniel</span></h1>
+
+					<h2 class="footer__education"><span class="typewritter__footer"></span></h2>
+				</div>
+
+				<div class="footer__social">
+					<a href="https://linkedin.com/in/cdanieeel" target="_blank" class="footer__social-link">
+						<i class="ri-linkedin-fill"></i>
+					</a>
+
+					<a href="https://github.com/noowz" target="_blank" class="footer__social-link">
+						<i class="ri-github-fill"></i>
+					</a>
+
+					<a href="https://twitter.com/noowzvlr" target="_blank" class="footer__social-link">
+						<i class="ri-twitter-fill"></i>
+					</a>
+
+					<a href="https://discord.com/users/163656084714815491" target="_blank" class="footer__social-link">
+						<i class="ri-discord-fill"></i>
+					</a>
+				</div>
+
+				<span class="footer__copy">
+					<i class="ri-code-s-slash-fill"></i> Developed with <i class="ri-heart-fill"></i> by <a href="https://github.com/noowz" target="_blank">Noowz</a>
+				</span>
+			</div>
+		</footer>
+
+		<a href="#" class="scrollup" id="scroll-up">
+			<i class="ri-arrow-up-line"></i>
+		</a>
+
+		<script src="../../js/scrollreveal.min.js"></script>
+		<script src="../../js/header.js"></script>
+		<script src="../../js/emailjs.js"></script>
+		<script src="../../js/navMenu.js"></script>
+		<script src="../../js/scroll.js"></script>
+		<script src="../../js/scrollReveal.js"></script>
+		<script src="../../js/typeWritter.js"></script>
+	</body>
+</html>
