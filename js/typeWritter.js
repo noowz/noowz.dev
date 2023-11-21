@@ -1,7 +1,7 @@
 let typeWritterHome;
 let typeWritterFooter;
 
-if (window.location.pathname === '/lang/pt/' || window.location.pathname === '/lang/pt/index.html') {
+if (window.location.pathname === '/lang/pt/' || window.location.pathname === '/lang/pt' || window.location.pathname === '/lang/pt/index.html') {
 	typeWritterHome = new Typed('.typewritter__home', {
 		strings: [
 			'Desenvolvedor Web',
@@ -27,7 +27,7 @@ if (window.location.pathname === '/lang/pt/' || window.location.pathname === '/l
 		loop: true,
 		loopCount: Infinity
 	});
-} else if (window.location.pathname === '/lang/fr/' || window.location.pathname === '/lang/fr/index.html') {
+} else if (window.location.pathname === '/lang/fr/' || window.location.pathname === '/lang/fr' || window.location.pathname === '/lang/fr/index.html') {
 	typeWritterHome = new Typed('.typewritter__home', {
 		strings: [
 			'Développeur Web',
